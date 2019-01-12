@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "testOne": "jest II.pass-tests/01-add-one/add-one.test.js ",
+    "testTwo": "jest II.pass-tests/04-find-needle/find-needle.test.js",
+    "testThree": "jest II.pass-tests/08-get-average/get-average.test.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +24,8 @@
   },
   "dependencies": {
     "node-fetch": "^2.1.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
