@@ -1,11 +1,12 @@
 var greetPeople = require("./greet-people.js");
-test("print list of names prefixed with Hello", function() {
-  var arrOfNames = ["King", "Queen", "Jester"];
-  var unchanged = ["King", "Queen", "Jester"];
-  var expected = ["Hello King", "Hello Queen", "Hello Jester"];
 
-  //var output greetPeople(arrOfName);
-  var output = greetPeople(arrOfNames);
-  expect(output).toBe(expected);
-  expect(arrOfNames).toEqual(unchanged);
+test("function to prefix hello", function() {
+  var names = ["Adam", "Hannah", "Merlin", "Author"];
+
+  var unchanged = ["Adam", "Hannah", "Merlin", "Author"];
+  var expected = ["Hello Adam", "Hello Hannah", "Hello Merlin", "Hello Author"];
+  var output = greetPeople(names);
+
+  expect(output).toEqual(expected);
+  expect(names).toEqual(unchanged);
 });
