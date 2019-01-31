@@ -1,6 +1,7 @@
-module.exports = function(car) {
+module.exports = function(cars, newColour) {
   //var arrOfCars = car.map();
   //var arrOfCars = [cars, unpaintedCars, ];
-  var newCar = Object.assign({ colour: "Pink" }, car);
-  return newCar;
+  var newCars = cars.map(x => Object.assign({}, x));
+  newCars[0].colour = newColour;
+  return newCars;
 };
